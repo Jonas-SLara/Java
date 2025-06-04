@@ -12,17 +12,17 @@ COMO USAR ESTE PROJETO
     você pode adicionar o pgadmin como serviço, escolha a imagem certa
     e as variaveis de ambiente e as portas mapeadas, exemplo do meu:
 
-   pgadmin:
-    image: dpage/pgadmin4
-    container_name: pgadmin
-    restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@admin.com
-      PGADMIN_DEFAULT_PASSWORD: admin1234
-    ports:
-      - "5050:80"
-    depends_on:
-      - postgres
+  - pgadmin:
+  -  image: dpage/pgadmin4
+  -  container_name: pgadmin
+  -  restart: always
+  -  environment:
+  -    PGADMIN_DEFAULT_EMAIL: admin@admin.com
+  -    PGADMIN_DEFAULT_PASSWORD: admin1234
+  -  ports:
+  -    - "5050:80"
+  -  depends_on:
+  -    - postgres
  
 
 # Como compilar e executar e empacotar o projeto para war
